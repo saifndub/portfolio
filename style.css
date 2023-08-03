@@ -663,3 +663,27 @@ header .navbar ul li a:hover {
 .pygame h4 {
   color: #eebb4d;
 }
+
+.thumb .overlay-bg {
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .thumb .overlay-bg {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+/* Your CSS styles go here */
+.single-portfolio {
+    display: none; /* Hide all project items by default */
+}
+
+.single-portfolio.active {
+    display: block; /* Show active project items based on filtering */
+}
