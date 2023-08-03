@@ -231,7 +231,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .counter .box span {
-    font-size: 4rem;
+    font-size: 2rem;
     color: var(--yellow);
 }
 
@@ -460,4 +460,206 @@ header .navbar ul li a:hover {
     .contact .row form {
         margin: 3rem 0;
     }
+}
+
+/*==================== Project Filter ==============*/
+.skill h3 {
+    font-size: 18px;
+  }
+  
+.filters {
+  text-align: center;
+}
+.filters ul {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.filters ul li {
+  color: #bac964;
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.filters ul li:hover {
+  color: #1c24bd;
+}
+.filters ul li.active {
+  color: #78c964;
+}
+.single-portfolio {
+    margin-bottom: 50px;
+    display: block;
+}
+.single-portfolio .relative {
+  margin-bottom: 20px;
+}
+.single-portfolio .p-inner {
+  text-align: center;
+}
+.single-portfolio .p-inner h4 {
+  font-size: 20px;
+  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.single-portfolio .p-inner .cat {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+/*--------- Start Portfolio Area -------------*/
+.portfolio-area .primary-btn {
+    color: #fff;
+    background-color: #bac964;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-area .filters {
+  text-align: center;
+}
+
+.portfolio-area .filters ul {
+  padding: 0;
+}
+
+.portfolio-area .filters ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 18px 15px;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+}
+@media (max-width: 736px) {
+  .portfolio-area .filters ul li {
+    padding: 6px 6px;
+  }
+}
+
+.portfolio-area .filters ul li:after {
+  content: "";
+  display: block;
+  width: calc(0% - 60px);
+  position: absolute;
+  height: 2px;
+  background: #333;
+  -webkit-transition: width 350ms ease-out;
+  -o-transition: width 350ms ease-out;
+  transition: width 350ms ease-out;
+}
+
+.portfolio-area .filters ul li:hover:after {
+  width: calc(100% - 60px);
+  -webkit-transition: width 350ms ease-out;
+  -o-transition: width 350ms ease-out;
+  transition: width 350ms ease-out;
+}
+
+.portfolio-area .filters ul li.active {
+  color: #bac964;
+}
+
+.portfolio-area .filters-content {
+  margin-top: 50px;
+}
+
+.portfolio-area .filters-content .show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.portfolio-area .filters-content .hide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.portfolio-area .filters-content .item {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.portfolio-area .filters-content .item img {
+  border-radius: 10px;
+}
+
+.portfolio-area .filters-content .p-inner {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.portfolio-area .filters-content .item .p-inner .cat {
+  font-size: 13px;
+}
+
+.portfolio-area .filters-content .item img {
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.middle {
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.single-portfolio:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  padding: 16px 32px;
+}
+
+.single-portfolio {
+  border-radius: 5px;
+}
+.single-portfolio:hover .thumb .overlay-bg {
+  opacity: 0.85;
+}
+.machine_learning h4 {
+  color: #e7305b;
+}
+.coding h4 {
+  color: #fe6845;
+}
+.web h4 {
+  color: #d3de32;
+}
+
+.pygame h4 {
+  color: #eebb4d;
 }
